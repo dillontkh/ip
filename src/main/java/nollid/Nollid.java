@@ -15,17 +15,17 @@ public class Nollid {
     /**
      * The list of tasks in the application.
      */
-    private final TaskList tasks;
+    private TaskList tasks;
 
     /**
      * The storage object for managing data storage.
      */
-    private final Storage storage;
+    private Storage storage;
 
     /**
      * The user interface object for interacting with the user.
      */
-    private final Ui ui;
+    private Ui ui;
 
     /**
      * Constructs a Nollid object with the specified file path for data storage.
@@ -36,6 +36,9 @@ public class Nollid {
         this.ui = new Ui();
         this.storage = new Storage(filePath);
         this.tasks = new TaskList(this.storage.load());
+    }
+
+    public Nollid() {
     }
 
     public static void main(String[] args) {
@@ -65,5 +68,13 @@ public class Nollid {
                 this.ui.sendMessage(e.getMessage());
             }
         }
+    }
+
+    /**
+     * You should have your own function to generate a response to user input.
+     * Replace this stub with your completed method.
+     */
+    public String getResponse(String input) {
+        return "Duke heard: " + input;
     }
 }

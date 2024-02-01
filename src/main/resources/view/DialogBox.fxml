@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<fx:root alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="400.0" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="dialog" alignment="TOP_LEFT" cache="true" depthTest="DISABLE" style="-fx-background-color: coral;" text="Label" wrapText="true">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Label>
+      <BorderPane prefHeight="99.0" prefWidth="18.0" style="-fx-pref-width: 10;" />
+        <ImageView fx:id="displayPicture" fitHeight="99.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/DaDuke.png" />
+         </image></ImageView>
+    </children>
+    <padding>
+        <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
+    </padding>
+</fx:root>
